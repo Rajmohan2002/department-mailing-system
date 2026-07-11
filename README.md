@@ -1,0 +1,5 @@
+The project contains all the necessary Department Mailing System about the College and providing the facility to get the attendance and result through e-mail and SMS. It also facilitates to view the results of every semester exams through this project. 
+Result Analysis capabilities include the basics such as exam result as well as many other specialized capabilities, including student can access to real time student marks for each and every semester through mail or they can enter into college website to get their results later. Staffs can use this project to get grade book to keep grades. The Student’s Mark Analysis project contains all the necessary Management about the College department, store subject code, subject name and providing internal and external marks for all the students for all departments in the college. Then calculate internal and external marks for all the semester. Then provide percentage and grade for all the students. So students can view their assessment marks, internal mark and exam result with grade. 
+Technology Used		: 	Microsoft ASP.NET
+Database			:	Sql Server 
+Database Connectivity	:	ActiveX Data Object (ADO)
