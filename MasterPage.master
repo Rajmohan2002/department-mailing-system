@@ -1,0 +1,264 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> E-Student Management System</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tools.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            margin-left: 0px;
+        }
+        .style2
+        {
+            top: 25px;
+            left: 69px;
+            position: relative;
+            height: 250px;
+            width: 820px;
+        }
+        </style>
+</head>
+<body>
+   <form id="Form1" name="f1" runat ="server" >
+<div id="wrap">
+  <div id="top_box">
+  <br />
+ 
+    <div id="logo">
+     
+       </div>
+    <div id="menu">
+    <ul class="style1">
+        <li><a href="HomePage.aspx"   class="active">Home</a></li>
+        <li><a href="AdminLogin.aspx"  >Admin</a></li>
+        <li><a href="ParentLogin.aspx" >Parent</a></li>
+       
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="clear">
+     <h1 style ="color :White ; text-align :center; font-size :xx-large ;"> THE AMERICAN 
+         COLLEGE,MADURAI.</h1>
+        <p style ="color :White ; text-align :center; font-size :Medium; font-weight :bold ; "> (Autonomous)</p>
+        <p style ="color :White ; text-align :center; font-size :xx-large ;"> Department of 
+            Information Technology</p>
+    </div>
+  </div>
+  <div class="content_top"></div>
+  <div id="content">
+    <div id="prew_box">
+	
+	         <div class="scrollable">
+				<div class="items">
+					<div class="item">
+					  <div class="header1">
+					<%--<img src="images/slide3.jpg" alt="" title="" />--%>
+                      
+					  <img  src ="images/Slide1.jpg" alt="" title="" class="style2" /></div> 
+           
+					</div> <!-- item -->
+					<div class="item">
+					    <div class="header2">
+						
+						  <%-- <img src="images/slide2.jpg" alt="" title="" />--%>
+
+                          <img src="images/BLUE.jpg" alt="" title="" 
+                              
+                              
+                             class="style2" />
+
+                   
+	
+						
+						</div>						
+					</div> <!-- item -->
+					<div class="item">
+					    <div class="header3">
+						
+						  <img  src ="images/header_images.jpg" title="" 
+                              
+                              
+                            class="style2" />
+						
+						</div>						
+					</div> <!-- item -->
+					
+					<div class="item">
+					    <div class="header4">
+						
+						  
+                             <img src="images/img11_4.jpg" alt="" title="" 
+                              
+                              
+                             class="style2" />
+						
+						</div>						
+					</div> <!-- item -->											
+					
+				</div> <!-- items -->
+			</div> <!-- scrollable -->
+			<div style="height: 10px"></div>
+			<div >
+           
+                   <table width ="100%" >
+                   <tr>
+                   <td >
+                   <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Font-Size="Small" Visible="False" Font-Bold="True" 
+                           ForeColor="#009933">
+                       <Items>
+                           <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Home Page" Value="Home Page">
+                           </asp:MenuItem>
+                           <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="Admin Login" 
+                               Value="Admin Login"></asp:MenuItem>
+                           <asp:MenuItem NavigateUrl="~/ParentLogin.aspx" Text="Parent Login" 
+                               Value="Parent Login"></asp:MenuItem>
+                       </Items>
+                <DynamicMenuItemStyle Font-Bold="True" Height="30px"  />
+                
+                <DynamicMenuStyle HorizontalPadding="140px" />
+                       <StaticHoverStyle ForeColor="#CC0000" Font-Bold="True" />
+                       <StaticMenuItemStyle HorizontalPadding="120px" />
+        </asp:Menu>
+                   
+                   </td>
+                   </tr>
+                   <tr>
+                   <td>
+                   <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Font-Size="Small" Visible="False" Font-Bold="True" 
+                           ForeColor="#009933">
+                       <Items>
+                           <asp:MenuItem Text="Staff" Value="Staff">
+                               <asp:MenuItem NavigateUrl="~/StaffDetails.aspx" Text="New Staff Details" 
+                                   Value="New Staff Details"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ViewAndModifyStaffDetails.aspx" 
+                                   Text="View and Modify Staff Details" Value="View and Modify Staff Details">
+                               </asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Student" Value="Student">
+                               <asp:MenuItem NavigateUrl="~/StudentDetails.aspx" Text="New Student Details" 
+                                   Value="New Student Details"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ViewAndModifyStudentDetails.aspx" 
+                                   Text="View and Modify Student Details" Value="View and Modify Student Details">
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ChangeStudentSemester.aspx" Text="Change Semester" 
+                                   Value="Change Semester"></asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Event" Value="Event">
+                               <asp:MenuItem NavigateUrl="~/EventDetails.aspx" Text="Add New Event" 
+                                   Value="Add New Event"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ViewAndModifyEventDetails.aspx" 
+                                   Text="View and Modify Event Details" Value="View and Modify Event Details">
+                               </asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Paper" Value="Paper">
+                               <asp:MenuItem NavigateUrl="~/SemesterWisePaperDetails.aspx" 
+                                   Text="Semesterwise Paper Details" Value="Semesterwise Paper Details">
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/SubjectAllotment.aspx" Text="Subject Allotment" 
+                                   Value="Subject Allotment"></asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Feedback" Value="Feedback">
+                               <asp:MenuItem NavigateUrl="~/InsertStudentFeedback.aspx" 
+                                   Text="Insert Student Feedback" Value="Insert Student Feedback">
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/AdminViewStudentFeedback.aspx" 
+                                   Text="View Student Feedback" Value="View Student Feedback"></asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Mark Entry" Value="Mark Entry">
+                               <asp:MenuItem NavigateUrl="~/SemesterExamMarkEntryDetails.aspx" 
+                                   Text="Semester Exam Mark Entry Details" 
+                                   Value="Semester Exam Mark Entry Details"></asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Attendance" Value="Attendance">
+                               <asp:MenuItem NavigateUrl="~/MonthlyAttendanceForm.aspx" 
+                                   Text="Monthly Attendance " Value="Monthly Attendance "></asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem NavigateUrl="~/AdminViewMailDetails.aspx" Text="View Mail" 
+                               Value="View Mail"></asp:MenuItem>
+                           <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Logout" Value="Logout">
+                           </asp:MenuItem>
+                       </Items>
+                       <DynamicHoverStyle Font-Bold="True" ForeColor="#990000" />
+                <DynamicMenuItemStyle Font-Bold="True" Height="22px"  />
+                
+                <DynamicMenuStyle HorizontalPadding="20px" />
+                       <StaticMenuItemStyle HorizontalPadding="22px" />
+                       <StaticMenuStyle HorizontalPadding="50px" />
+        </asp:Menu>
+                   
+                   </td>
+                   
+                   </tr>
+                   <tr>
+                   <td>
+                       <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" 
+                           StaticEnableDefaultPopOutImage="False" Visible="False" Font-Bold="True" 
+                           ForeColor="#009933">
+                           <DynamicHoverStyle Font-Bold="True" ForeColor="#990000" />
+                           <DynamicMenuItemStyle Height="25px" HorizontalPadding="40px" />
+                           <Items>
+                               <asp:MenuItem Text="Profile" Value="Profile" 
+                                   NavigateUrl="~/ViewStudentDetails.aspx">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Events" Value="Events" 
+                                   NavigateUrl="~/ParentViewEventDetails.aspx">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Attendance" Value="Attendance" 
+                                   NavigateUrl="~/ParentViewStudentAttendance.aspx">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Feedback" Value="Feedback" 
+                                   NavigateUrl="~/ParentViewStudentFeedback.aspx">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Mark Details" Value="Mark Details" 
+                                   NavigateUrl="~/ParentViewStudentMarks.aspx">
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ParentSendMail.aspx" Text="Send Mail" 
+                                   Value="Send Mail">
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Logout" Value="Logout">
+                               </asp:MenuItem>
+                           </Items>
+                           <StaticMenuItemStyle HorizontalPadding="40px" />
+                       </asp:Menu>
+                   
+                   </td>
+                   
+                   </tr>
+                     </table>
+            <br /><br /> <br /><br />  <br />
+             </div> <!-- create automatically the point dor the navigation depending on the numbers of items -->		   
+			  
+                <div style="clear: both" >
+              <div style ="padding-left :100px;padding-right :100px;">               
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                    </div>
+
+               
+                 
+               
+                 
+             </div>
+   
+
+    </div>
+    
+    
+  </div>
+  <div class="content_bot"></div>
+  
+</div>
+</form></body>
+</html>
