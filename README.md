@@ -2,13 +2,13 @@ A web-based Department Mailing System developed using ASP.NET Web Forms and C#. 
 
 ## 🚀 Features
 
-- 👨‍💼 Admin Login
-- 📩 Department Mail Management
-- 📢 Event Management
-- 👨‍🎓 Student Feedback Management
-- 📚 Student Semester Update
-- 📄 View Mail Details
-- 🗄️ SQL Server Database Integration
+- Admin Login
+- Department Mail Management
+- Event Management
+- Student Feedback Management
+- Student Semester Update
+- View Mail Details
+- SQL Server Database Integration
 
 ## 🛠️ Tech Stack
 
@@ -37,7 +37,7 @@ DepartmentMailingProject/
 
 ## ⚙️ Installation
 
-1. Clone the repository.
+1. download
 
 ```bash
 git clone https://github.com/your-username/DepartmentMailingProject.git
